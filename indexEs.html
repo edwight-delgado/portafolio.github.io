@@ -13,7 +13,160 @@
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap");
 
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  max-width: 60rem;
+  max-height: 33rem;
+  overflow: hidden;
+  border-radius: 2px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.modal-content-left,
+.modal-content-right {
+  flex: 0 1 auto;
+}
+
+.modal-content-left {
+  flex: 2;
+}
+
+.modal-content-left img {
+  width: 40rem;
+  max-width: 95%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-radius: 2px;
+}
+
+.modal-content-right {
+  flex: 2;
+  max-width: 100%;
+  padding: 1rem 3rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close,
+.close-imp {
+  color: #aaa;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+  border-radius: 2px;
+  transition: 0.4s ease-out;
+}
+
+.close:hover,
+.close:focus,
+.close-imp:hover,
+.close-imp:focus {
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Patua One", cursive;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-header p {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 0.5rem 3rem;
+}
+
+.modal-header {
+  padding-top: 2rem;
+}
+
+.modal-footer {
+  padding-bottom: 2rem;
+}
+
+/* ===== Page Content ===== */
+
+h1 {
+  font-family: "Patua One", cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  width: 100%;
+}
+
+
+    </style>
   </head>
   <body>
 
@@ -218,12 +371,9 @@
             <section id="content1" class="tab-content text-left">
                 <div class="d-grid grid-col-3">
                     <div class="product">
-                        <a href="assets/images/911falcon.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
                             <figure>
                                 <img src="assets/images/911falcon.jpg" class="img-responsive" alt="" />
                             </figure>
-                        </a>
                         
                     </div>
                     <div class="product">
@@ -266,7 +416,7 @@
                         <a href="assets/images/g6.jpg" data-lightbox="example-set"
                             data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
                             <figure>
-                                <img src="assets/images/g6.jpg" class="img-responsive" alt="" />
+                                <img src="assets/images/agence_1.png" class="img-responsive" alt="" />
                             </figure>
                         </a>
                         
@@ -338,12 +488,9 @@
             <section id="content3" class="tab-content text-left">
                 <div class="d-grid grid-col-3">
                     <div class="product">
-                        <a href="assets/images/g5.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
                             <figure>
-                                <img src="assets/images/g5.jpg" class="img-responsive" alt="" />
+                                <img src="assets/images/g5.jpg" class="img-responsive" alt="" data-toggle="modal" data-target="#exampleModal" />
                             </figure>
-                        </a>
                       
                     </div>
                     <div class="product">
@@ -394,7 +541,7 @@
     <!-- Products4 block -->
 </div>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
 <section class="services-12" id="experience">
 	<div class="form-12-content">
 		<div class="container">
@@ -601,6 +748,38 @@
           </div>
       </div>
   </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <div class="modal-content-left">
+      <img src="https://source.unsplash.com/5d5DSRQ5dUc" alt="unsplash daily picture">
+    </div><!-- end modal content left -->
+
+    <div class="modal-content-right">
+
+      <div class="modal-header">
+        <p>Hello.</p>
+        <span class="close">&times;</span>
+      </div>
+
+      <div class="modal-body">
+        <span>
+            <button class="btn btn-success">repositorio</button>
+        </span>
+        <p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
+        <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>
+      </div>
+
+      <div class="modal-footer">
+        <p>Consectetur adipisicing elit. Omnis, repellat! Laboriosam voluptate laudantium doloremque quo mollitia maiores ex veritatis sit expedita hic ipsum.</p>
+      </div>
+
+    </div>
+  </div>
+</div><!-- END the modal -->
    <!-- move top -->
   <button onclick="topFunction()" id="movetop" title="Go to top">
               <span class="fa fa-angle-up"></span>
@@ -631,7 +810,40 @@
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- //footer-28 block -->
 </section>
+<script type="text/javascript">
+    // Get the modal
+const modal = document.querySelector("#myModal");
 
+// Get the button that opens the modal
+const btn = document.querySelectorAll(".product");
+
+// Get the <span> element that closes the modal
+const closeModal = document.getElementsByClassName("close")[0];
+
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+}
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+closeModal.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+</script>
 <script>
     $(function () {
       $('.navbar-toggler').click(function () {

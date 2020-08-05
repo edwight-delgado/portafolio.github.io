@@ -1,0 +1,23 @@
+171 falcon
+software de sistema de estadistica de emergencias  del centro de emergencia estado falcon
+
+permite regitro de casos a travez del sitema sigec implementado en la central de emergencias 171 falcon
+
+ecowualla
+pagina web para la venta de productos biodegradables
+info tecnica
+
+photogram 
+clon de instagram, que permite emular las caracteristicas de instagram usando start MERN (Mongodb,Express,React,Node.js), autentificacion con JWT, comunicacion por api rest, almacenamiento usando mongodb,
+
+juego de la vida de John Conway
+script del juego de la vida escrito en python usando pygame. basado en en el video de dot.CSV
+
+Proyecto Agence!
+Este proyecto está realizado en laravel usando API. Para separar la aplicación cliente del servidor. Usando ajax como medio de comunicar los datos con el servidor por medio de Jquery, vue.js y vue-resource finalmente se utilizó highcharts para generar los gráficos de manera dinámica 
+
+CodigoQR
+generador y lector de codigo QR usando javascript para la identificacion de personal de la gobenacion del estado falcon 
+
+inventario clack 
+sitema de inventario de productos 
