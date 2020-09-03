@@ -6,853 +6,636 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>My Website a Personal Portfolio Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+    <title>My Personal Portfolio</title>
     <!-- web fonts -->
     <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
-    <style type="text/css">
-        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap");
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 10px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 95%;
-  max-width: 60rem;
-  max-height: 33rem;
-  overflow-y:auto;
-  border-radius: 2px;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-
-  font-family: "Open Sans", sans-serif;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.modal-content-left,
-.modal-content-right {
-  flex: 0 1 auto;
-}
-
-.modal-content-left {
-  flex: 2;
-}
-
-.modal-content-left img {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  max-width: 95%;
-  margin: 0;
-  padding: 0;
-  display: block;
-  border-radius: 2px;
-}
-
-.modal-content-right {
-  flex: 2;
-  max-width: 100%;
-  padding: 1rem 3rem;
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-/* The Close Button */
-.close,
-.close-imp {
-  color: #aaa;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 0 1rem;
-  border-radius: 2px;
-  transition: 0.4s ease-out;
-}
-
-.close:hover,
-.close:focus,
-.close-imp:hover,
-.close-imp:focus {
-  color: #111;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Patua One", cursive;
-  font-size: 3.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.modal-header p {
-  margin: 0;
-  padding: 0;
-}
-
-.modal-header,
-.modal-body,
-.modal-footer {
-  padding: 0.5rem 3rem;
-}
-
-.modal-header {
-  padding-top: 2rem;
-}
-
-.modal-footer {
-  padding-bottom: 2rem;
-}
-
-/* ===== Page Content ===== */
-
-h1 {
-  font-family: "Patua One", cursive;
-  text-align: center;
-  font-size: 3rem;
-}
-
-.container {
-  width: 100%;
-}
-@media(max-width: 835px){
-  .modal-content-right {
-    padding-top: 10rem;
-  }
-}
-@media(max-width: 730px){
-  .modal-content-right {
-    padding: 0;
-    padding-top: 10rem;
-  }
-}
-@media(max-width: 530px){
-  .modal-content{
-    flex-direction: column;
-  }
-  .modal-content-left{
-    width: 100%;
-  }
-  .modal-content-left img{
-    width: 100%;
-    height: 200px;
-  }
-  .modal-content-right {
-    padding: 0;
-    padding-top: 11rem;
-  }
-}
-
-/* ----------circulo --------------- */
-.circulo{
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    background-color: #126789;
-    margin-right: 5px;
-    color: white;
-    padding: 0;
-    border-radius: 50%;
-    vertical-align: middle;
-    position: relative;
-    border: 1px solid blue;
-    cursor: pointer;
-}
-.circulo:hover{
-  background-color: #28a745;
-  border: 1px solid #12a7be;
-}
-.circulo i{
-  position: absolute;
-  top: 3px;
-  left: 7px
-}
-.product figure{
-  cursor: pointer;
-}
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
   </head>
   <body id="app">
 
-<section class="w3l-bootstrap-header">
-  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"> My Website</a>
-      <!-- if logo is image enable this   
-    <a class="navbar-brand" href="#index.html">
-        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-    </a> -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon fa fa-bars"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Acerca de Mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">portfolio</a>
-          </li>
-         
-        
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonios</a>
-          </li>
-        </ul>
-        
-      </div>
-    </div>
-  </nav>
-</section>
- <!--  Main banner section -->
- <section class="w3l-main-banner" id="home">
-  <div class="companies20-content">
-    <div class="companies-wrapper">
-        <div class="item">
-         
-            <div class="slider-info banner-view text-center">
-              <div class="banner-info container">
-                <img src="assets/images/c1.jpg" alt="about image" class="img-fluid">
-                <h3 class="banner-text mt-5">Hola, Soy Edwight Delgado
-                  </h3>
-                  <p class="my-4 mb-5">Desarrollador Web</p><br>
-               <!---------------- social shared ----------->
-               <div class="footer-29 text-center w3l-footer-29-main" style="margin-bottom: 2em;">
-                    <div class="container">
-            
-                        <div class="main-social-footer-29">
-                                    
-                          <a href="#facebook" class="github"><span class="fa fa-github"></span></a>
-                          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-                          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                          <a href="#google-plus" class="google-plus"><span class="fa fa fa-codepen"></span></a>
-                          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-                        </div>
-              
-                    </div>
-                </div>
-               <!------------------end social shared ------>
-              </div>
-            </div>
-          
-        </div>
-    </div>
-  </div>
-</section>
- <!--  //Main banner section -->
-<section class="w3l-about " id="about">
-<div class="skills-bars py-5">
- <div class="container py-md-3">
-  <div class="heading text-center mx-auto">
-    <h3 class="head">Acerca de Mi</h3>
-    <p class="my-3 head"> Soy Edwight Delgado desarrollador Web (Backend y Frontend) . Soy de
-    Venezuela. Me motiva programar y escribir mis ideas con código. Crear y solucionar problemas con software. Usando una gran variedad de herramientas del backend como php con laravel, node.js con express. Trabajo
-    del lado del frondend con Html 5, Css 3, Javascript, Vue.js, Bootstrap 4,
-    webpack, babel y muchas mas. Ingresa a mi portafolio y observa mis
-    proyectos. Descárgalos y pruébalos</p>
-      <a href="#">
-        <button class="btn btn-success">Descarga Mi Curriculo <i class="fa fa-cloud-download"></i></button>
-      </a>
-    </div>
-<div class="row mt-5 pt-3">
-    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-        <h4><span class="circulo btnModal" data-key="python"><i class="fa fa-info"></i></span>Python</h4>
-        <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 50% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-      </div>
-    </div>
-</div>
-    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-        <h4>
-          <span class="circulo btnModal" data-key="node">
-            <i class="fa fa-info"></i>
-          </span>
-          node.js
-        </h4>
-        <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-      </div>
-    </div>
-</div>
-<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-    <h4>
-      <span class="circulo btnModal" data-key="php">
-        <i class="fa fa-info"></i>
-      </span>php</h4>
-    <div class="progress">
-    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 60% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  </div>
-</div>
-</div>
-<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-    <h4>
-      <span class="circulo btnModal" data-key="web-design">
-        <i class="fa fa-info"></i>
-      </span>Web Design
-    </h4>
-    <div class="progress">
-    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 70% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  </div>
-</div>
-</div>
-<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-    <h4>
-      <span class="circulo btnModal" data-key="database">
-        <i class="fa fa-info"></i>
-      </span>Base de Dato</h4>
-    <div class="progress">
-    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 90% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  </div>
-</div>
-</div>
-<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
-    <h4>
-      <span class="circulo btnModal" data-key="git">
-        <i class="fa fa-info"></i>
-      </span>Git</h4>
-    <div class="progress">
-    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 90% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  </div>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids ">
-    <h4>
-      <span class="circulo btnModal" data-key="javascript">
-        <i class="fa fa-info"></i>
-      </span>Javascript
-    </h4>
-    <div class="progress">
-    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  </div>
-</div>
-</div>
-
- </div>
- </div>
-</div>
- </section>
-<section class="w3l-feature-3" id="features">
-	<div class="grid top-bottom">
-		<div class="container">
-			<div class="heading text-center mx-auto">
-                <h3 class="head text-white">
-                Ocupación</h3>
-                <p class="my-3 head text-white">
-                    Mis principales ocupaciones en el  desarrollo web estan enfocadas en tres areas principales 
-                </p>
-              </div>
-			<div class="middle-section grid-column text-center mt-5 pt-3">
-				<div class="three-grids-columns">
-					<span class="fa fa-code"></span>
-					<h4>Fronted</h4>
-					<p>maquetacion web con HTML5, CSS3, programacion con javascript vanilla , React.js y Vue.js</p>
-					
-				</div>
-				<div class="three-grids-columns">
-					<span class="fa fa-terminal"></span>
-					<h4>Backend</h4>
-					<p>programacion con php, python, javascript usando node.js y espress, creacion de api rest, analisis de datos con python</p>
-					
-				</div>
-				<div class="three-grids-columns">
-					<span class="fa fa-database"></span>
-					<h4>base de dato</h4>
-					<p>manejo de gestores de base de datos como mysql, postgress, sqlite y mongodb, manejo de Views, Trigger, stored procedure</p>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<div class="products-4" id="portfolio">
-    <!-- Products4 block -->
-    <div id="products4-block" class="text-center">
+    <section class="my-header">
+      <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
         <div class="container">
-            <div class="heading text-center mx-auto mb-5">
-                <h3 class="head">Portafolio</h3>
+          <a class="navbar-brand" href="index.html"> Edwight D</a>
+          <!-- if logo is image enable this   
+        <a class="navbar-brand" href="#index.html">
+            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+        </a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fa fa-bars"></span>
+          </button>
 
-              </div>
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label class="tabtle" for="tab1">All Projects</label>
-
-            <input id="tab2" type="radio" name="tabs">
-            <label class="tabtle" for="tab2">web Scrapy</label>
-
-            <input id="tab3" type="radio" name="tabs">
-            <label class="tabtle" for="tab3">Personal project</label>
-
-            <input id="tab4" type="radio" name="tabs">
-            <label class="tabtle" for="tab4">Website</label>
-
-            <section id="content1" class="tab-content text-left">
-                <div class="d-grid grid-col-3">
-                    <div class="product btnModal" data-key="911">
-                      <figure>
-                          <img src="assets/images/911falcon.jpg" class="img-responsive" alt="" />
-                      </figure>
-                        
-                    </div>
-                    <div class="product btnModal" data-key="ecowualla">
-                      <figure>
-                          <img src="assets/images/ecowuaylla-mini.png" class="img-responsive" alt="" />
-                      </figure>
-                        
-                    </div>
-                    <div class="product btnModal" data-key="photogram">    
-                      <figure>
-                          <img src="assets/images/photogram.jpg" class="img-responsive" alt="" />
-                      </figure>
-                    </div>
-                    <div class="product">
-                      <figure>
-                          <img src="assets/images/alive.png" class="img-responsive" alt="" />
-                      </figure> 
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g5.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img src="assets/images/blog-vocal-min.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                       
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g6.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img loading="lazy" src="assets/images/agence_1.png" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                        
-                    </div>
-                    
-                    
-                </div>
-            </section>
-
-            <section id="content2" class="tab-content text-left">
-                <div class="d-grid grid-col-3">
-                    <div class="product">
-                        <a href="assets/images/g7.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img loading="lazy" src="assets/images/g7.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                        
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g8.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img loading="lazy" src="assets/images/g8.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                       
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g1.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img loading="lazy" src="assets/images/g1.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                       
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g2.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img src="assets/images/g2.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                       
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g3.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img src="assets/images/g3.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                        
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g4.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img src="assets/images/g4.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section id="content3" class="tab-content text-left">
-                <div class="d-grid grid-col-3">
-                    <div class="product">
-                            <figure>
-                                <img loading="lazy" src="assets/images/g5.jpg" class="img-responsive" alt="" data-toggle="modal" data-target="#exampleModal" />
-                            </figure>
-                      
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g6.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img loading="lazy" src="assets/images/g6.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                       
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g7.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img loading="lazy" src="assets/images/g7.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section id="content4" class="tab-content text-left">
-                <div class="d-grid grid-col-3">
-                    <div class="product">
-                        <a href="assets/images/g8.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img src="assets/images/g8.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                        
-                    </div>
-                    <div class="product">
-                        <a href="assets/images/g1.jpg" data-lightbox="example-set"
-                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
-                            <figure>
-                                <img src="assets/images/g1.jpg" class="img-responsive" alt="" />
-                            </figure>
-                        </a>
-                        
-                    </div>
-                </div>
-            </section>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Acerca de Mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">portfolio</a>
+              </li>
+             
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonios</a>
+              </li>
+            </ul>
+            
+          </div>
         </div>
+      </nav>
+    </section>
+     <!--  Main banner section -->
+    <section class="my-main-banner" id="home">
+      <div class="companies20-content">
+        <div class="companies-wrapper">
+            <div class="item">
+             
+                <div class="slider-info banner-view text-center">
+                  <div class="banner-info container">
+                    <img src="assets/images/me.png" alt="about image" class="img-fluid">
+                    <h3 class="banner-text mt-5">Hola, Soy Edwight Delgado
+                      </h3>
+                      <p class="my-4 mb-5">Desarrollador Web</p><br>
+                   <!---------------- social shared ----------->
+                   <div class="footer-29 text-center my-footer-main" style="margin-bottom: 2em;">
+                        <div class="container">
+                
+                            <div class="main-social-footer-29">
+                                        
+                              <a href="https://github.com/edwight-delgado/" class="github"><span class="fa fa-github"></span></a>
+                              <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                              <a href="https://www.kaggle.com/edwight" class="instagram"><span class="fa fa-instagram"></span></a>
+                              <a href="#google-plus" class="google-plus"><span class="fa fa fa-codepen"></span></a>
+                              <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                            </div>
+                  
+                        </div>
+                    </div>
+                   <!------------------end social shared ------>
+                  </div>
+                </div>
+              
+            </div>
+        </div>
+      </div>
+    </section>
+     <!--  //Main banner section -->
+    <section class="my-about" id="about">
+      <div class="skills-bars py-5">
+       <div class="container py-md-3">
+        <div class="heading text-center mx-auto">
+          <h3 class="head">Acerca de Mi</h3>
+          <p class="my-3 head">Soy el Ing Edwight Delgado Venezolano desarrollador Web (backend y frontend), autodidata motivado por el aprendizaje continuo. Me encanta crear software y solucionar proplemas con una gran variedad de herramientas. Mi objectivo es aportar los conocimientos y experiencia en trabajos anteriores en el desarrollo de algunas startup o empresas tecnologicas, para crear productos que permitan ayudar a las personas con el uso de la tecnologia y a la vez desarrollarme profesionalmente evolucionando en mi sector de modo que busco oportunidades que me permitan hacerlo</p>
+            <a href="#">
+              <button class="btn btn-success">Descarga Mi Curriculo <i class="fa fa-cloud-download"></i></button>
+            </a>
+          </div>
+      <div class="row mt-5 pt-3">
+          <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+              <h4><span class="circulo btnModal" data-key="python" style="display: none;"><i class="fa fa-info"></i></span>Python</h4>
+              <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+      </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+              <h4>
+                <span class="circulo btnModal" data-key="node" style="display: none;">
+                  <i class="fa fa-info"></i>
+                </span>
+                node.js
+              </h4>
+              <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>
+            <span class="circulo btnModal" data-key="php" style="display: none;">
+              <i class="fa fa-info"></i>
+            </span>php</h4>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 60% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>
+            <span class="circulo btnModal" data-key="web-design" style="display: none;">
+              <i class="fa fa-info"></i>
+            </span>Web Design
+          </h4>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 70% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>
+            <span class="circulo btnModal" data-key="database" style="display: none;">
+              <i class="fa fa-info"></i>
+            </span>Base de Dato</h4>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 90% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>
+            <span class="circulo btnModal" data-key="git" style="display: none;">
+              <i class="fa fa-info"></i>
+            </span>Git</h4>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 90% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids ">
+          <h4>
+            <span class="circulo btnModal" data-key="javascript" style="display: none;">
+              <i class="fa fa-info"></i>
+            </span>Javascript
+          </h4>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+      </div>
+
+       </div>
+       </div>
+      </div>
+    </section>
+    <section class="my-feature" id="features">
+    	<div class="grid top-bottom">
+    		<div class="container">
+    			<div class="heading text-center mx-auto">
+                    <h3 class="head text-white">
+                    Ocupación</h3>
+                    <p class="my-3 head text-white">
+                        Mis principales ocupaciones en el  desarrollo web estan enfocadas en tres areas principales 
+                    </p>
+                  </div>
+    			<div class="middle-section grid-column text-center mt-5 pt-3">
+    				<div class="three-grids-columns">
+    					<span class="fa fa-code"></span>
+    					<h4>Fronted</h4>
+    					<p>maquetacion web con HTML5, CSS3, programacion con javascript vanilla , React.js y Vue.js</p>
+    					
+    				</div>
+    				<div class="three-grids-columns">
+    					<span class="fa fa-terminal"></span>
+    					<h4>Backend</h4>
+    					<p>programacion con php, python, javascript usando node.js y espress, creacion de api rest, analisis de datos con python</p>
+    					
+    				</div>
+    				<div class="three-grids-columns">
+    					<span class="fa fa-database"></span>
+    					<h4>base de dato</h4>
+    					<p>manejo de gestores de base de datos como mysql, postgress, sqlite y mongodb, manejo de Views, Trigger, stored procedure</p>
+    					
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <div class="my-portafolio" id="portfolio">
+        <!-- Products4 block -->
+        <div id="products4-block" class="text-center">
+            <div class="container">
+                <div class="heading text-center mx-auto mb-5">
+                    <h3 class="head">Portafolio</h3>
+
+                  </div>
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label class="tabtle" for="tab1">proyectos</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label class="tabtle" for="tab2">web Scrapy</label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label class="tabtle" for="tab3">poyectos personal</label>
+
+                <input id="tab4" type="radio" name="tabs">
+                <label class="tabtle" for="tab4">paginas web</label>
+
+                <section id="content1" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="my-project btnModal" data-key="911">
+                          <figure>
+                              <img loading="lazy" src="assets/images/911falcon.jpg" class="img-responsive" alt="" />
+                          </figure>
+                            
+                        </div>
+                        <div class="my-project btnModal" data-key="ecowualla">
+                          <figure>
+                              <img loading="lazy" src="assets/images/ecowuaylla-mini.png" class="img-responsive" alt="" />
+                          </figure>
+                            
+                        </div>
+                        <div class="my-project btnModal" data-key="photogram">    
+                          <figure>
+                              <img loading="lazy" src="assets/images/photogram.jpg" class="img-responsive" alt="" />
+                          </figure>
+                        </div>
+                        <div class="my-project btnModal" data-key="alive">
+                          <figure>
+                              <img loading="lazy" src="assets/images/alive.png" class="img-responsive" alt="" />
+                          </figure> 
+                        </div>
+                        <div class="my-project btnModal" data-key="blog-vocal">
+                          <figure>
+                              <img loading="lazy" src="assets/images/blog-vocal-min.jpg" class="img-responsive" alt="" />
+                          </figure> 
+                        </div>
+                        <div class="my-project btnModal" data-key="agence">
+                            
+                          <figure>
+                              <img loading="lazy" src="assets/images/agence_1.png" class="img-responsive" alt="" />
+                          </figure>
+                             
+                        </div>
+                        <div class="my-project btnModal" data-key="linio">
+                            
+                          <figure>
+                              <img loading="lazy" src="assets/images/linio.png" class="img-responsive" alt="" />
+                          </figure>
+                             
+                        </div>
+                        <div class="my-project btnModal" data-key="game-analisis">
+                            
+                          <figure>
+                              <img loading="lazy" src="assets/images/game-analisis.png" class="img-responsive" alt="" />
+                          </figure>
+                             
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section id="content2" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="product">
+                            <a href="assets/images/g7.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img loading="lazy" src="assets/images/g7.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                            
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g8.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img loading="lazy" src="assets/images/g8.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                           
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g1.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img loading="lazy" src="assets/images/g1.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                           
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g2.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img src="assets/images/g2.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                           
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g3.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img src="assets/images/g3.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                            
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g4.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img src="assets/images/g4.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content3" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="product">
+                                <figure>
+                                    <img loading="lazy" src="assets/images/g5.jpg" class="img-responsive" alt="" data-toggle="modal" data-target="#exampleModal" />
+                                </figure>
+                          
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g6.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img loading="lazy" src="assets/images/g6.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                           
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g7.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img loading="lazy" src="assets/images/g7.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content4" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="product">
+                            <a href="assets/images/g8.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img src="assets/images/g8.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                            
+                        </div>
+                        <div class="product">
+                            <a href="assets/images/g1.jpg" data-lightbox="example-set"
+                                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                                <figure>
+                                    <img src="assets/images/g1.jpg" class="img-responsive" alt="" />
+                                </figure>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Products4 block -->
     </div>
-    <!-- Products4 block -->
-</div>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 
-<section class="services-12" id="experience">
-	<div class="form-12-content">
-		<div class="container">
-			<div class="grid grid-column-2 ">
-				
-				<div class="column1">
-          <h3 class="mb-5">Experiences</h3>
-					<div class="experience-top">
-                        <h5>2018 - ahora</h5>
-						<h4>Fulltime Freelancer</h4>
-						<p class="my-3 text-white">
-                            trabajo de freelace en distintos proyectos como agence, Blog de Canto Lirico ,ecowualla, Republic Of Gamers Colombia,Dell Medellin
-                        .</p>
+    <section class="my-experience" id="experience">
+    	<div class="form-12-content">
+    		<div class="container">
+    			<div class="grid grid-column-2 ">
+    				
+    				<div class="column1">
+              <h3 class="mb-5">Experiencia</h3>
+    					<div class="experience-top">
+                <h5>2018 - ahora</h5>
+    						<h4>Fulltime Freelancer</h4>
+    						<p class="my-3 text-white">
+                    trabajo de freelace en distintos proyectos como agence, Blog de Canto Lirico ,ecowualla, Republic Of Gamers Colombia,Dell Medellin
+                            .</p>
+                        </div>
+                        <div class="experience-top">
+                            <h5>2018 - 2019</h5>
+                            <h4>Gobernación del Estado Falcón - Venezuela.</h4>
+                            <p class="my-3 text-white">Ocupación: Programador de sistemas de gestion publica.
+                            </p>
+                        </div>
+                        <div class="experience-top">
+                          <h5>2016 - 2017</h5>
+                          <h4>Centro de Emergencia 171 Falcón - Venezuela</h4>
+                          <p class="my-3 text-white">
+                              Ocupación: Programador del sistema Interno de Emergencias del Estado Falcón.
+                          </p>
+                        </div>
+                  <div class="experience-top">
+                    <h5>2014 - 2016</h5>
+                    <h4>Diario La Mañana - Venezuela</h4>
+                    <p class="my-3 text-white">Ocupación: Desarrollador Web, Operador Web del diario regional de noticias la mañana.</p>
                     </div>
-                    <div class="experience-top">
-                        <h5>2018 - 2019</h5>
-                        <h4>Gobernación del Estado Falcón - Venezuela.</h4>
-                        <p class="my-3 text-white">Ocupación: Programador de sistemas de gestion publica.
-                        </p>
-                    </div>
-                    <div class="experience-top">
-                      <h5>2016 - 2017</h5>
-                      <h4>Centro de Emergencia 171 Falcón - Venezuela</h4>
-                      <p class="my-3 text-white">
-                          Ocupación: Programador del sistema Interno de Emergencias del Estado Falcón.
-                      </p>
-                    </div>
-              <div class="experience-top">
-                <h5>2014 - 2016</h5>
-                <h4>Diario La Mañana - Venezuela</h4>
-                <p class="my-3 text-white">Ocupación: Desarrollador Web, Operador Web del diario regional de noticias la mañana.</p>
-                </div>
-                
-					</div>
-					<div class="column2">
-            <h3 class="mb-5">Educación</h3>
-            <div class="experience-top">
-              <h5>2013</h5>
-              <h4>Especializado como Ingeniero de Telecomunicaciones</h4>
-              <p class="my-3 text-white">
-                  Universidad Nacional Experimental Politécnica de la Fuerza Armada Bolivariana (UNEFA)
-              </p>
-              </div>
-              <div class="experience-top">
-                <h5>2012</h5>
-                <h4>Fundacite</h4>
-                <p class="my-3 text-white">Programación Basica en PHP y MYSQL.</p>
-              </div>
-              <div class="experience-top">
-                <h5>2012</h5>
-                <h4>Inces</h4>
-                <p class="my-3 text-white">Curso Eletronica Digital.</p>
-              </div>
+                    
+    					</div>
+    					<div class="column2">
+                <h3 class="mb-5">Educación</h3>
                 <div class="experience-top">
-                  <h5>2006</h5>
-                  <h4>Especializado en Técnico Medio en Informática</h4>
+                  <h5>2013</h5>
+                  <h4>Especializado como Ingeniero de Telecomunicaciones</h4>
                   <p class="my-3 text-white">
-                      Escuela Tecnica Comercial Pedro Curiel Ramírez 
+                      Universidad Nacional Experimental Politécnica de la Fuerza Armada Bolivariana (UNEFA)
                   </p>
                   </div>
-					</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="w3l-testimonials" id="testimonials">
-  <div class="customers-6-content py-5">
-    <div class="container py-lg-3">
-      <div class="heading text-center mx-auto">
-        <h3 class="head">What They Says</h3>
-        <p class="my-3 head "> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-          Nulla mollis dapibus nunc, ut rhoncus
-          turpis sodales quis. Integer sit amet mattis quam.</p>
-      </div>
-     
-      <div id="customerhnyCarousel" class="carousel slide" data-ride="carousel">
-
-        <ol class="carousel-indicators">
-          <li data-target="#customerhnyCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#customerhnyCarousel" data-slide-to="1"></li>
-                      
-        </ol>
-        <!-- Carousel items -->
-        <div class="carousel-inner pb-5">
-
-          <div class="carousel-item active">
-            <div class="customer row py-5 mt-3">
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                 
-                  <div class="card-body">
-                    <img class="card-img-top img-responsive" src="assets/images/c1.jpg" alt="">
-                    <h3 class="card-title mt-2">Henry Nicholas</h3>
-                    <p class="sub-title mb-3">Photographer</p>
-                    <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
-                    </p>
-                  
-                    
+                  <div class="experience-top">
+                    <h5>2012</h5>
+                    <h4>Fundacite</h4>
+                    <p class="my-3 text-white">Programación Basica en PHP y MYSQL.</p>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 off-testi-2">
-                <div class="card">
-                
-                  <div class="card-body">
-                    <img class="card-img-top img-responsive" src="assets/images/c2.jpg" alt="">
-                    <h3 class="card-title mt-2">Mark Waugh</h3>
-                    <p class="sub-title mb-3">Web Designer</p>
-                    <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
-                    </p>
-                    
-                  
+                  <div class="experience-top">
+                    <h5>2012</h5>
+                    <h4>Inces</h4>
+                    <p class="my-3 text-white">Curso Eletronica Digital.</p>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi">
-                <div class="card">
-                  
-                  <div class="card-body">
-                    <img class="card-img-top img-responsive" src="assets/images/c3.jpg" alt="">
-                    <h3 class="card-title mt-2">Sarina Willams</h3>
-                    <p class="sub-title mb-3">Graphic Designer</p>
-                    <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
-                     </p>
-                   
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <div class="experience-top">
+                      <h5>2006</h5>
+                      <h4>Especializado en Técnico Medio en Informática</h4>
+                      <p class="my-3 text-white">
+                          Escuela Tecnica Comercial Pedro Curiel Ramírez 
+                      </p>
+                      </div>
+    					</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="their-testimonials" id="testimonials">
+      <div class="customers-6-content py-5">
+        <div class="container py-lg-3">
+          <div class="heading text-center mx-auto">
+            <h3 class="head">What They Says</h3>
+            <p class="my-3 head "> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.</p>
           </div>
-          <!--.item-->
+         
+          <div id="customerhnyCarousel" class="carousel slide" data-ride="carousel">
 
-          <div class="carousel-item">
-            <div class="customer row py-5 mt-3">
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                 
-                  <div class="card-body">
-                    <img class="card-img-top img-responsive" src="assets/images/c2.jpg" alt="">
-                    <h3 class="card-title mt-2">Mark Waugh</h3>
-                    <p class="sub-title mb-3">Engineer</p>
-                    <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
-                    </p>
-                  
-                  
+            <ol class="carousel-indicators">
+              <li data-target="#customerhnyCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#customerhnyCarousel" data-slide-to="1"></li>
+                          
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner pb-5">
+
+              <div class="carousel-item active">
+                <div class="customer row py-5 mt-3">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                     
+                      <div class="card-body">
+                        <img class="card-img-top img-responsive" src="assets/images/c1.jpg" alt="">
+                        <h3 class="card-title mt-2">Henry Nicholas</h3>
+                        <p class="sub-title mb-3">Photographer</p>
+                        <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
+                        </p>
+                      
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 off-testi-2">
+                    <div class="card">
+                    
+                      <div class="card-body">
+                        <img class="card-img-top img-responsive" src="assets/images/c2.jpg" alt="">
+                        <h3 class="card-title mt-2">Mark Waugh</h3>
+                        <p class="sub-title mb-3">Web Designer</p>
+                        <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
+                        </p>
+                        
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi">
+                    <div class="card">
+                      
+                      <div class="card-body">
+                        <img class="card-img-top img-responsive" src="assets/images/c3.jpg" alt="">
+                        <h3 class="card-title mt-2">Sarina Willams</h3>
+                        <p class="sub-title mb-3">Graphic Designer</p>
+                        <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
+                         </p>
+                       
+                        
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 off-testi-2">
-                <div class="card">
-                 
-                  <div class="card-body">
-                    <img class="card-img-top img-responsive" src="assets/images/c3.jpg" alt="">
-                    <h3 class="card-title mt-2">Sarina Willams</h3>
-                    <p class="sub-title mb-3">Engineer</p>
-                    <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
-                     </p>
-                  
+              <!--.item-->
+
+              <div class="carousel-item">
+                <div class="customer row py-5 mt-3">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                     
+                      <div class="card-body">
+                        <img class="card-img-top img-responsive" src="assets/images/c2.jpg" alt="">
+                        <h3 class="card-title mt-2">Mark Waugh</h3>
+                        <p class="sub-title mb-3">Engineer</p>
+                        <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
+                        </p>
+                      
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 off-testi-2">
+                    <div class="card">
+                     
+                      <div class="card-body">
+                        <img class="card-img-top img-responsive" src="assets/images/c3.jpg" alt="">
+                        <h3 class="card-title mt-2">Sarina Willams</h3>
+                        <p class="sub-title mb-3">Engineer</p>
+                        <p class="card-text">  "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
+                         </p>
+                      
+                        
+                      </div>
+                    </div>
                     
+                    
+                  </div>
+                  <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi">
+                    <div class="card">
+                     
+                      <div class="card-body">
+                        <img class="card-img-top img-responsive" src="assets/images/c1.jpg" alt="">
+                        <h3 class="card-title mt-2">Henry Nicholas</h3>
+                        <p class="sub-title mb-3">Engineer</p>
+                        <p class="card-text"> "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
+                        </p>
+                       
+                        
+                      </div>
+                    </div>
                   </div>
                 </div>
                 
-                
               </div>
-              <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi">
-                <div class="card">
-                 
-                  <div class="card-body">
-                    <img class="card-img-top img-responsive" src="assets/images/c1.jpg" alt="">
-                    <h3 class="card-title mt-2">Henry Nicholas</h3>
-                    <p class="sub-title mb-3">Engineer</p>
-                    <p class="card-text"> "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"
-                    </p>
-                   
-                    
-                  </div>
-                </div>
-              </div>
+               
+
             </div>
+            <!--.carousel-inner-->
+          </div>
+        </div>
+      </div>
+      <!--//customers -->
+    </section>
+ 
+     <!-- grids block 5 -->
+    <section class="my-footer-main" id="footer">
+      <div class="footer-29 text-center">
+          <div class="container">
+            
+            <div class="main-social-footer-29">
+                        
+              <a href="#facebook" class="github"><span class="fa fa-github"></span></a>
+              <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+              <a href="https://bitbucket.org/edwight/" class="instagram"><span class="fa fa-instagram"></span></a>
+              <a href="#codepen" class="google-plus"><span class="fa fa-codepen"></span></a>
+              <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+          </div>
+              <div class="bottom-copies text-center">
+                  <p class="copy-footer-29">© 2020 Edwight D.</p>
+                   
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <div class="modal-content-left">
+          <img id="modal-img" loading="lazy" src="assets/images/g4.jpg" alt="unsplash daily picture">
+        </div><!-- end modal content left -->
+
+        <div class="modal-content-right">
+
+          <div class="modal-header">
+            <p id="modal-title">Hello.</p>
+            <span class="close">&times;</span>
+          </div>
+
+          <div class="modal-body" id="modal-body">
             
           </div>
-           
 
         </div>
-        <!--.carousel-inner-->
       </div>
-    </div>
-  </div>
-  <!--//customers -->
-</section>
- 
- <!-- grids block 5 -->
- <section class="w3l-footer-29-main" id="footer">
-  <div class="footer-29 text-center">
-      <div class="container">
-        
-        <div class="main-social-footer-29">
-                    
-          <a href="#facebook" class="github"><span class="fa fa-github"></span></a>
-          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-          <a href="#codepen" class="google-plus"><span class="fa fa-codepen"></span></a>
-          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-      </div>
-          <div class="bottom-copies text-center">
-              <p class="copy-footer-29">© 2020 My Website. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a></p>
-               
-          </div>
-      </div>
-  </div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-
-    <div class="modal-content-left">
-      <img id="modal-img" loading="lazy" src="assets/images/g4.jpg" alt="unsplash daily picture">
-    </div><!-- end modal content left -->
-
-    <div class="modal-content-right">
-
-      <div class="modal-header">
-        <p id="modal-title">Hello.</p>
-        <span class="close">&times;</span>
-      </div>
-
-      <div class="modal-body">
-        <span>
-            <button class="btn btn-success">repositorio</button>
-        </span>
-        <span id="modal-body">
-          
-        </span>
-        
-      </div>
-
-      <div class="modal-footer">
-        <p>Consectetur adipisicing elit. Omnis, repellat! Laboriosam voluptate laudantium doloremque quo mollitia maiores ex veritatis sit expedita hic ipsum.</p>
-      </div>
-
-    </div>
-  </div>
-</div><!-- END the modal -->
+    </div><!-- END the modal -->
    <!-- move top -->
   <button onclick="topFunction()" id="movetop" title="Go to top">
               <span class="fa fa-angle-up"></span>
@@ -890,6 +673,13 @@ h1 {
         id:'python',
         img:'assets/images/python.jpg',
         title:'PYTHON',
+        body:`<p>bs4 pandas numpy plotly  To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
+        <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>`
+      },
+      {
+        id:'javascript',
+        img:'assets/images/javascript.png',
+        title:'javascript',
         body:`<p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
         <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>`
       },
@@ -914,6 +704,12 @@ h1 {
         <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>`
       },
       {
+        id:'web-design',
+        img:'assets/images/node.jpg',
+        title:'NODE.JS',body:`<p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
+        <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>`
+      },
+      {
         id:'php',
         img:'assets/images/php.jpg',
         title:'PHP',body:`<p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
@@ -922,20 +718,104 @@ h1 {
       {
         id:'911',
         img:'assets/images/911falcon.jpg',
-        title:'title',body:`<p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
-        <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>`
+        title:'sistema de emergencia 171 falcon',body:`
+          <span>
+            <span class="circulo-icon color-black">
+              <a href="https://github.com/edwight/911falcon_master"><i class="fa fa-github-square fixed"></i></a>
+            </span>
+            <span class="circulo-icon color-green">
+              <a href=""><i class="fa fa-cloud-download"></i></a>
+            </span>
+            <span class="circulo-icon color-blue">
+              <a href=""><i class="fa fa-bitbucket fixed"></i></a>
+            </span>
+            <span class="circulo-icon color-black">
+              <a href=""><i class="fa fa-codepen"></i></a>
+            </span>
+                
+          </span>
+            <p>software de sistema de estadistica de emergencias del centro de emergencia estado falcon venezuela el cual permite regitro y reporte de casos de emergencia regional (robo, maltratos, incendios) a travez del sitema sigec implementado en la central de emergencias 171 falcon.</p>`
       },  
       {
         id:'ecowualla',
         img:'assets/images/ecowuaylla-mini.png',
-        title:'Ecowualla',body:`<p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
-        <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>`
+        title:'Ecowualla',body:`
+        <span>
+            <span class="circulo-icon color-black">
+              <a href="https://github.com/edwight/ecowuaylla"><i class="fa fa-github-square fixed"></i></a>
+            </span>
+            <span class="circulo-icon color-green">
+              <a href="https://edwight.github.io/ecowuaylla/"><i class="fa fa-cloud-download"></i></a>
+            </span>
+            <span class="circulo-icon color-blue">
+              <a href=""><i class="fa fa-bitbucket fixed"></i></a>
+            </span>
+            <span class="circulo-icon color-black">
+              <a href=""><i class="fa fa-codepen"></i></a>
+            </span>
+                
+          </span>
+        <p>proyecto web para la conservación y manejo sostenible de los recursos naturales, a través de productos eco-amigables de uso cotidiano.</p>
+        <p>frontend
+        lenguajes:html5, css3, javascript,
+        librerias:
+          owl-carousel.
+          bootstrap,
+          jquery 3
+          gmap .</p>`
       },
       {
         id:'photogram',
         img:'assets/images/photogram.jpg',
         title:'title',body:`<p>Thanks for clicking! :) To close this modal, you can click the x in the top right corner, or click inside the darkened area around the modal.</p>
         <p>Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus ex? Temporibus a ea modi, esse commodi illum alias quasi odio. Laudantium fugiat autem mollitia qui culpa voluptate necessitatibus.</p>`
+      },
+      {
+        id:'agence',
+        img:'assets/images/agence_1.png',
+        title:'Proyecto Agence!',body:`<p>TEste proyecto está realizado en laravel usando API. Para separar la aplicación cliente del servidor.</p>
+        <p>Usando ajax como medio de comunicar los datos con el servidor por medio de Jquery, vue.js y vue-resource finalmente se utilizó highcharts para generar los gráficos de manera dinámica.</p>`
+      },
+      {
+        id:'alive',
+        img:'assets/images/alive.png',
+        title:'juego de la vida de John Conway',body:`<p>script del juego de la vida escrito en python usando pygame. basado en en el video de dot.CSV.</p>
+        <p>la idea es la simulacion de vida artifcifial usando reglas simple que crean a una escala mayor un comportamiento emergente mas complejo.</p>`
+      },
+      {
+        id:'blog-vocal',
+        img:'assets/images/blog-vocal-min.jpg',
+        title:'blog recursos vocales',body:`
+        <span>
+            <span class="circulo-icon color-black">
+              <a href="https://github.com/edwight/ecowuaylla"><i class="fa fa-github-square fixed"></i></a>
+            </span>
+            <span class="circulo-icon color-green">
+              <a href="https://orientacion-vocal.herokuapp.com/"><i class="fa fa-cloud-download"></i></a>
+            </span>
+            <span class="circulo-icon color-blue">
+              <a href="https://bitbucket.org/edwight/proyecto-orientacion-vocal/src/master/"><i class="fa fa-bitbucket fixed"></i></a>
+            </span>
+            <span class="circulo-icon color-black">
+              <a href=""><i class="fa fa-codepen"></i></a>
+            </span>
+                
+          </span>
+          <p>blog de recursos para la orientacion vocal para la Universidad Nacional Experimental Francisco de Miranda (UNEFM).</p>`
+      },
+      {
+        id:'linio',
+        img:'assets/images/linio.png',
+        title:'Linio web Scrapy',body:`<p>Web scrappy para obtener de forma automatica las imagenes, titulo, precio, categoria y enlaces a las paginas de www.linio.com.pe. que es guardado en un archivo 'linio.csv' El script esta escrito en python con las siguientes librerias</p>`
+      },
+      {
+        id:'game-analisis',
+        img:'assets/images/game-analisis.png',
+        title:'analisis de dataset de videojuegos',body:`<p>analisis de videojuego con pandas 
+          analisis de los precios del los videojuego usando python con la libreria pandas para los distintas estadisticas y ploly para creacion de graficos dinamicos e interativos 
+          .</p>
+          
+          `
       },
     ]
 

@@ -1,37 +1,114 @@
-171 falcon
-software de sistema de estadistica de emergencias  del centro de emergencia estado falcon
+sistema de emergencia 171 falcon
+software de sistema de estadistica de emergencias  del centro de emergencia estado falcon venezuela el cual
 
-permite regitro de casos a travez del sitema sigec implementado en la central de emergencias 171 falcon
+permite regitro y reporte de casos de emergencia regional (robo, maltratos, incendios) a travez del sitema sigec implementado en la central de emergencias 171 falcon
+
+base de dato:mysql
+lenguaje:php
+framework:laravel
+dependencia:
+	laravel-dompdf,
+	maatwebsite/exce,
+	laravelcollective/html,
+
+frontend:
+lenguaje: html5,css3, javascript
+librerias: 
+	bootstrap
+	datatables
+	jquery
+	highcharts.js
+	
 
 ecowualla
-pagina web para la venta de productos biodegradables
-info tecnica
+ proyecto web para la conservación y manejo sostenible de los recursos naturales, a través de productos eco-amigables de uso cotidiano.
+
+frontend
+lenguajes:html5, css3, javascript,
+librerias:
+	owl-carousel.
+	bootstrap,
+	jquery 3
 
 photogram 
 clon de instagram, que permite emular las caracteristicas de instagram usando start MERN (Mongodb,Express,React,Node.js), autentificacion con JWT, comunicacion por api rest, almacenamiento usando mongodb,
 
 juego de la vida de John Conway
 script del juego de la vida escrito en python usando pygame. basado en en el video de dot.CSV
+la idea es la simulacion de vida artifcifial usando reglas simple que crean a una escala mayor un comportamiento emergente
+lenguaje: python
+modulo o paquete: pygame, numpy
 
 Proyecto Agence!
 Este proyecto está realizado en laravel usando API. Para separar la aplicación cliente del servidor. Usando ajax como medio de comunicar los datos con el servidor por medio de Jquery, vue.js y vue-resource finalmente se utilizó highcharts para generar los gráficos de manera dinámica 
+
+backend
+lenguaje:php
+framework:laravel
+base de dato:mysql
+fronted
+lenguajes:html5,css3,javascript
+framework:vue.js
+librerias
+Jquery
+highcharts
+bootstrap
+axios
 
 CodigoQR
 generador y lector de codigo QR usando javascript para la identificacion de personal de la gobenacion del estado falcon 
 
 inventario clack 
 sitema de inventario de productos 
+backend
+lenguaje: php
+framework:laravel
+base de dato:mysql
+fronted
+lenguaje:html5,css3, javascript
+framework:vue.js
+modulos:
+	vue-router,
+	axios,
+	vuex,
+	chart.js
+
 
 Orientacion vocal UNEFM
-blog de recursos para la orientacion vocal
+blog de recursos para la orientacion vocal para la Universidad Nacional Experimental Francisco de Miranda (UNEFM) 
+lenjuaje:node.js
+librerias: 
+	express,
+	ejs
+fronted:
+vue.js
 
 Find Jobs
 sistema para la busqueda de trabajo. en donde por subpcrición se puede octar a un trabajo deseado, ademas posee busquedas avanzada por area geografica, sexo, estudios academicos, sueldo, etc
+	lenguaje:javascript
+	libreria:react.js
+	modulos:
+		react-router,
+		redux
 
 ecommece Experimental
 sistema experimental de ecomece, donde se simula la compra de un producto, carrito de compra, inventario, reporte de actividad de compra 
 
 analisis de videojuego con pandas 
-analisis de los precios del los videojuego usando python con pandas para los distintas estadisticas y ploly para creacion de graficos dinamicos e interativos 
+analisis de los precios del los videojuego usando python con la libreria pandas para los distintas estadisticas y ploly para creacion de graficos dinamicos e interativos 
+
+lenguaje:python
+librerias:
+	numpy,
+	pandas,
+	plotly
 
 
+Linio web Scrapy 
+web scrappy para obtener de forma automatica las imagenes, titulo, precio, categoria y enlaces a las paginas de www.linio.com.pe. que es guardado en un archivo 'linio.csv' El script esta escrito en python con las siguientes  librerias 
+
+lenguaje:python
+-BeautifulSoup
+-requests
+-PIL
+-csv
