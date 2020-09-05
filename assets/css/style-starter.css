@@ -9561,7 +9561,10 @@ a.text-dark:hover, a.text-dark:focus {
   --text-color: #585858;
   --title-color: #1A1D2D;
   --white-color: #ffffff;
-  --light-bg-color: #f6f6f6; }
+  --light-bg-color: #f6f6f6; 
+  --base-color: #1d2029;
+  --gray-color: #5f616d;
+}
 
 html {
   scroll-behavior: smooth; }
@@ -10438,7 +10441,7 @@ h4.sub-title {
   -ms-transition: 0.3s ease-in; }
 
 .my-main-banner .banner-view {
-  background: url(../images/fondo2.png) no-repeat right;
+  background: url(../images/fondo2-2.jpeg) no-repeat right;
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -10972,7 +10975,7 @@ body:after {
     font-size: 12px; } }
 
 .my-experience .form-12-content {
-  background: url("../images/developer-skills.jpg") no-repeat center;
+  background: url("../images/developer-skills-2.jpeg") no-repeat center;
   background-size: cover;
   padding: 5rem 0px;
   background-attachment: fixed;

@@ -133,9 +133,7 @@
   padding: 0.5rem 3rem;
 }
 
-.modal-header {
-  padding-top: 2rem;
-}
+
 
 .modal-footer {
   padding-bottom: 2rem;
@@ -178,6 +176,9 @@ h1 {
   .modal-content-right {
     padding: 0;
     padding-top: 11rem;
+  }
+  .modal-body{
+  	margin-bottom: 2rem;
   }
 }
 

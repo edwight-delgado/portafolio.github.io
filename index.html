@@ -200,12 +200,12 @@
     				<div class="three-grids-columns">
     					<span class="fa fa-terminal"></span>
     					<h4>Backend</h4>
-    					<p>programacion con php, python, javascript usando node.js y espress, creacion de api rest, analisis de datos con python</p>
+    					<p>Programación con Php, Javascript usando node.js y Espress, creación de api rest, análisis de datos con Python</p>
     					
     				</div>
     				<div class="three-grids-columns">
     					<span class="fa fa-database"></span>
-    					<h4>base de dato</h4>
+    					<h4>Base de Datos</h4>
     					<p>Manejo de gestores de base de datos como mysql, postgress, sqlite y mongodb, manejo de Views, Trigger, stored procedure</p>
     					
     				</div>
@@ -373,12 +373,12 @@
                 <h5>2019 - 2020</h5>
     						<h4>Fulltime Freelancer</h4>
     						<p class="my-3 text-white">
-                    trabajo de freelace en distintos proyectos como agence, Blog de Canto Lirico, ecowualla, Republic Of Gamers Colombia, Dell Medellin entre otros proyectos
-                            .</p>
-                        </div>
+                    trabajo de freelace en distintos proyectos como agence, Blog de Canto Lirico, ecowualla, Republic Of Gamers Colombia, Dell Medellin entre otros proyectos.
+                </p>
+              </div>
                         <div class="experience-top">
                             <h5>2018 - 2019</h5>
-                            <h4>Gobernación del Estado Falcón - Venezuela.<a href="http://portal.falcon.gob.ve/"><i class="fa fa-info-circle"></i></a></h4>
+                            <h4>Gobernación del Estado Falcón - Venezuela <a href="http://portal.falcon.gob.ve/"><i class="fa fa-info-circle"></i></a></h4>
                             <p class="my-3 text-white">Ocupación: Programador de sistemas de gestión publica
                             </p>
                         </div>
@@ -412,7 +412,7 @@
                   </div>
                   <div class="experience-top">
                     <h5>2012</h5>
-                    <h4>Inces<a href="https://inces.gob.ve/"><i class="fa fa-info-circle"></i></a></h4>
+                    <h4>Inces <a href="https://inces.gob.ve/"><i class="fa fa-info-circle"></i></a></h4>
                     <p class="my-3 text-white">Curso Electrónica Digital.</p>
                   </div>
                     <div class="experience-top">
@@ -578,8 +578,36 @@
               </div>
           </div>
       </div>
+
+    
+   <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      <span class="fa fa-angle-up"></span>
+    </button>
+    <script>
+
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function () {
+             scrollFunction()
+         };
+  
+         function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 document.getElementById("movetop").style.display = "block";
+             } else {
+                 document.getElementById("movetop").style.display = "none";
+             }
+         }
+              
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+         }
+    </script>
+    <!-- /move top -->
     </section>
-    <!-- The Modal -->
+<!-- The Modal -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
@@ -602,37 +630,12 @@
         </div>
       </div>
     </div><!-- END the modal -->
-   <!-- move top -->
-  <button onclick="topFunction()" id="movetop" title="Go to top">
-              <span class="fa fa-angle-up"></span>
-                 </button>
-                 <script>
-                     // When the user scrolls down 20px from the top of the document, show the button
-                     window.onscroll = function () {
-                         scrollFunction()
-                     };
-              
-                     function scrollFunction() {
-                         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                             document.getElementById("movetop").style.display = "block";
-                         } else {
-                             document.getElementById("movetop").style.display = "none";
-                         }
-                     }
-              
-                     // When the user clicks on the button, scroll to the top of the document
-                     function topFunction() {
-                         document.body.scrollTop = 0;
-                         document.documentElement.scrollTop = 0;
-                     }
-                 </script>
-                 <!-- /move top -->
-</section>
 <!-- // grids block 5 -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- //footer-28 block -->
 </section>
 <script type="text/javascript">
+  window.addEventListener("load", function(){
     // Get Data 
     const datajson =[
       {
@@ -689,15 +692,6 @@
             <span class="circulo-icon color-black">
               <a href="https://github.com/edwight/911falcon_master"><i class="fa fa-github-square fixed"></i></a>
             </span>
-            <span class="circulo-icon color-green">
-              <a href=""><i class="fa fa-cloud-download"></i></a>
-            </span>
-            <span class="circulo-icon color-blue">
-              <a href=""><i class="fa fa-bitbucket fixed"></i></a>
-            </span>
-            <span class="circulo-icon color-black">
-              <a href=""><i class="fa fa-codepen"></i></a>
-            </span>
                 
           </span>
             <p>software de sistema de estadística de emergencias del centro de emergencia estado falcón Venezuela el cual permite registro y reporte de casos de emergencia regional (robo, maltratos, incendios) a través del sistema sigec implementado en la central de emergencias 171 falcón.</p>`
@@ -713,27 +707,22 @@
             <span class="circulo-icon color-green">
               <a href="https://edwight.github.io/ecowuaylla/"><i class="fa fa-cloud-download"></i></a>
             </span>
-            <span class="circulo-icon color-blue">
-              <a href=""><i class="fa fa-bitbucket fixed"></i></a>
-            </span>
-            <span class="circulo-icon color-black">
-              <a href=""><i class="fa fa-codepen"></i></a>
-            </span>
                 
           </span>
         <p>Proyecto web para la conservación y manejo sostenible de los recursos naturales, a través de productos eco-amigables de uso cotidiano.</p>
-        <p>frontend
-        lenguajes:html5, css3, javascript,
-        librerias:
-          owl-carousel.
-          bootstrap,
-          jquery 3
-          gmap .</p>`
+        <p>`
       },
       {
         id:'photogram',
         img:'assets/images/photogram.jpg',
-        title:'title',body:`Clon de instagram en Contrución.</p>
+        title:'Clon de Intagram (fase alpha)',body:`
+        <span>
+            <span class="circulo-icon color-black">
+              <a href="https://github.com/edwight/photogram"><i class="fa fa-github-square fixed"></i></a>
+            </span>
+                
+          </span>
+          <p>Clon de Instagran realizado utilizando node.js como lenguaje. Este proyecto tiene como finalidad hacer uso del lenguaje JavaScript tanto en el front-end como en el back-end. y mostrar el poder de JavaScript</p>
         `
       },
       {
@@ -747,7 +736,7 @@
             <span class="circulo-icon color-green">
               <a href="https://agence-prueba.herokuapp.com/"><i class="fa fa-cloud-download"></i></a>
             </span>
-            
+              
                 
           </span>
           <p>Este proyecto está realizado en laravel usando API. Para separar la aplicación cliente del servidor.</p>
@@ -759,14 +748,9 @@
         title:'juego de la vida de John Conway',body:`
         <span>
             <span class="circulo-icon color-black">
-              <a href="https://github.com/edwight/ecowuaylla"><i class="fa fa-github-square fixed"></i></a>
+              <a href="https://github.com/edwight-delgado/juego-de-la-vida"><i class="fa fa-github-square fixed"></i></a>
             </span>
-            <span class="circulo-icon color-green">
-              <a href="https://orientacion-vocal.herokuapp.com/"><i class="fa fa-cloud-download"></i></a>
-            </span>
-            <span class="circulo-icon color-blue">
-              <a href="https://bitbucket.org/edwight/proyecto-orientacion-vocal/src/master/"><i class="fa fa-bitbucket fixed"></i></a>
-            </span>  
+               
         </span>
         <p>Script del juego de la vida escrito en Python usando Pygame. basado en el video de dot.CSV.</p>
         <p>La idea es la simulación de vida artificial usando reglas simple que crean a una escala mayor un comportamiento emergente más complejo.</p>`
@@ -776,9 +760,6 @@
         img:'assets/images/blog-vocal-min.jpg',
         title:'Blog recursos vocales',body:`
         <span>
-            <span class="circulo-icon color-black">
-              <a href="https://github.com/edwight/ecowuaylla"><i class="fa fa-github-square fixed"></i></a>
-            </span>
             <span class="circulo-icon color-green">
               <a href="https://orientacion-vocal.herokuapp.com/"><i class="fa fa-cloud-download"></i></a>
             </span>
@@ -851,48 +832,48 @@
     }
   let key = document.querySelectorAll("[data-key]")
     // Get the modal
-const modal = document.querySelector("#myModal");
-// get body DOM
-const body = document.getElementById('app');
-// Get the button that opens the modal
-const btn = document.querySelectorAll(".btnModal");
+  const modal = document.querySelector("#myModal");
+  // get body DOM
+  const body = document.getElementById('app');
+  // Get the button that opens the modal
+  const btn = document.querySelectorAll(".btnModal");
 
-// Get the <span> element that closes the modal
-const closeModal = document.getElementsByClassName("close")[0];
+  // Get the <span> element that closes the modal
+  const closeModal = document.getElementsByClassName("close")[0];
 
-for (let i = 0; i < btn.length; i++) {
-  btn[i].addEventListener("click", function () {
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener("click", function () {
+      modal.style.display = "block";
+      body.style.overflow="hidden";
+      let key = btn[i].getAttribute('data-key');
+      //console.log(key)
+      let info = getData(key);
+      document.getElementById('modal-title').innerHTML=info[0].title
+      document.getElementById('modal-body').innerHTML=info[0].body
+      document.getElementById('modal-img').src=info[0].img
+    });
+  }
+
+  // When the user clicks the button, open the modal
+  btn.onclick = function () {
     modal.style.display = "block";
     body.style.overflow="hidden";
-    let key = btn[i].getAttribute('data-key');
-    //console.log(key)
-    let info = getData(key);
-    document.getElementById('modal-title').innerHTML=info[0].title
-    document.getElementById('modal-body').innerHTML=info[0].body
-    document.getElementById('modal-img').src=info[0].img
-  });
-}
+  };
 
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
-  body.style.overflow="hidden";
-};
-
-// When the user clicks on <span> (x), close the modal
-closeModal.onclick = function () {
-  modal.style.display = "none";
-  body.style.overflow="auto";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
+  // When the user clicks on <span> (x), close the modal
+  closeModal.onclick = function () {
     modal.style.display = "none";
     body.style.overflow="auto";
-  }
-};
+  };
 
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      body.style.overflow="auto";
+    }
+  };
+})
 </script>
 <script>
     $(function () {
